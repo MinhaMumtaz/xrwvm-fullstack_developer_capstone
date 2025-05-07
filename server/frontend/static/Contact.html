@@ -1,0 +1,121 @@
+<html>
+<head>
+  <!-- Link the style sheet here -->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+     <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    .container {
+      margin-top: 40px;
+    }
+
+    .contact-card {
+      border: 2px solid #ccc;
+      border-radius: 20px;
+      padding: 40px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      background-color: #f9f9f9;
+      position: relative;
+    }
+
+    .contact-image {
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+
+    .watermark {
+      position: absolute;
+      font-size: 100px;
+      color: #cce0ff;
+      font-weight: bold;
+      z-index: 0;
+      top: 150px;
+      left: 30%;
+      transform: rotate(-15deg);
+    }
+
+    .contact-icon {
+      font-size: 70px;
+      color: darkturquoise;
+    }
+
+    .contact-info {
+      max-width: 400px;
+      text-align: left;
+      z-index: 1;
+    }
+
+    .contact-info p {
+      font-size: 14px;
+      color: #0044cc;
+      margin-bottom: 10px;
+    }
+
+    .contact-info p strong {
+      display: block;
+      color: black;
+    }
+
+    .divider {
+      width: 2px;
+      background-color: #ccc;
+      height: 200px;
+      margin: 0 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+    <!-- Navbar (your code, unchanged) -->
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+   <!-- Contact Section -->
+<div class="container">
+  <div class="contact-card">
+    <img src="/static/car-lot.jpeg" class="contact-image" alt="Car Lot">
+   
+    <div class="divider d-none d-md-block"></div>
+    <div class="text-center">
+      <div class="contact-icon mb-3">📞</div>
+      <div class="contact-info">
+        <p><strong>Contact Customer Service</strong>support@bestcars.com</p>
+        <p><strong>Contact our National Advertising team</strong>NationalSales@bestcars.com</p>
+        <p><strong>Contact our Public Relations team</strong>PR@bestcars.com</p>
+        <p><strong>Contact the bestcars.com offices</strong>312–611–1111</p>
+        <p><strong>Become a bestcars.com car dealer</strong>Visit growwithbestcars.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
